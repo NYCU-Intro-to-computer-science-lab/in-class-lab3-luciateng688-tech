@@ -2,18 +2,20 @@
 #include <stdio.h>
 using namespace std;
 
-void river(int a,char from,char temp,char to)
+void river(int a,char from,char aux,char to)
 {
     if (a==1)
     {
-        cout << "Move disk 1 from "<<from << " to " << to << "\n";
+        cout << "Move disk 1 from "<<from << " to " << aux << "\n";
+        cout << "Move disk 1 from "<<aux << " to " << to << "\n";
         return;
     }
 
-    river (a-1,from,to,temp); 
-    cout << "Move disk "<< a <<" from "<<from << " to " << to << "\n";
+    river (a-1,from,to,aux); 
+    cout << "Move disk "<< a <<" from "<<from << " to " << aux << "\n";
+    cout << "Move disk "<< a <<" from "<<aux << " to " << to << "\n";
 
-    river (a-1,temp,from,to);
+    river (a-1,aux,from,to);
 }
 
 int main()
