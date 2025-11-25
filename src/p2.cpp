@@ -3,8 +3,24 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    
-    
+int func(int a,int b)
+{
+    while (true)
+    {
+        int c;
+        c=a%b;
+        if(c==0)
+        break;
+        a=b;
+        b=c;
+    }
+    return b;
+}
+
+int main()
+{
+    int a,b;
+    cin>>a1>>b;
+    cout <<func(a,b);
     return 0;
 }
