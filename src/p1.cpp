@@ -3,8 +3,32 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    
-    
+int sum(int n)
+{
+    int summ;
+    cin >> n;
+    summ=(1+n)*n/2;
+    return summ;
+}
+
+int long long fratorial(int n)
+{
+    int a=1;
+    for(int i; i<n ;i++)
+    {
+        a=a*n*(n-1);
+        n=n-1;
+        if (n=0)
+        break;
+    }
+    return a;
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    cout << fratorial(n)<<"\n";
+    cout <<sum(n);
     return 0;
 }
