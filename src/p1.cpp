@@ -6,7 +6,6 @@ using namespace std;
 int sum(int n)
 {
     int summ;
-    cin >> n;
     summ=(1+n)*n/2;
     return summ;
 }
@@ -18,7 +17,7 @@ int long long fratorial(int n)
     {
         a=a*n*(n-1);
         n=n-1;
-        if (n=0)
+        if (n==0)
         break;
     }
     return a;
