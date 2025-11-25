@@ -20,7 +20,7 @@ int func(int a,int b)
 int main()
 {
     int a,b;
-    cin>>a1>>b;
+    cin>>a>>b;
     cout <<func(a,b);
     return 0;
 }
